@@ -1,0 +1,47 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/Hero-Clean-Reverse-images.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/Navbar-Right-Links-icons.css' %}">
+</head>
+
+<body style="background: #371be4;">
+    <nav class="navbar navbar-light navbar-expand-md py-3">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-clipboard-check">
+                        <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"></path>
+                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"></path>
+                        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"></path>
+                    </svg></span><span style="color: #ffff;">To-do List App</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-2">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="{% url 'indexhtml' %}" style="color: #ffff;">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'login' %}" style="color: #ffff;">LOGIN</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'abouthtml' %}" style="color: #ffff;">SOBRE</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container py-4 py-xl-5" style="margin-top: -22px;">
+        <div class="row gy-4 gy-md-0">
+            <div class="col-md-6">
+                <div class="p-xl-5 m-xl-5"><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;" src="{% static 'assets/img/cherry-sushi-lunch-at-work.png' %}"></div>
+            </div>
+            <div class="col-md-6 d-md-flex align-items-md-center">
+                <div style="max-width: 350px;">
+                    <h2 class="text-uppercase fw-bold" style="color: #ffff;font-size: 30.1px;">Quem somos nós?</h2>
+                    <p class="text-start my-3"><span style="color: rgb(255, 255, 255);">Somos alunos da UNIVESP, graduandos do curso de Bacharelado em Tecnologia da Informação, e desenvolvemos esse site com base na disciplina de Projeto Integrador.</span><br></p><a class="btn btn-primary btn-lg me-2" role="button" href="https://github.com/Yuri-Sidney-Forjaz/pi3-checklist">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/bs-init.js' %}"></script>
+</body>
+
+</html>

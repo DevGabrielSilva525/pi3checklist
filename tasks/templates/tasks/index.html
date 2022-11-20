@@ -1,0 +1,101 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/Hero-Clean-Reverse-images.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="{% static 'assets/css/Navbar-Right-Links-icons.css' %}">
+</head>
+
+<body style="background: #371be4;">
+    <nav class="navbar navbar-light navbar-expand-md py-3" data-aos="fade-right" data-aos-duration="550">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-clipboard-check">
+                        <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"></path>
+                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"></path>
+                        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"></path>
+                    </svg></span><span style="color: #ffff;">To-do List App</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-2">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="{% url 'indexhtml' %}" style="color: #ffff;">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="{% url 'login' %}" style="color: #ffff;">LOGIN</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="{% url 'abouthtml' %}" style="color: #ffff;">SOBRE</a></li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="{% url 'login' %}" style="color: #ffff;">CHECK-LIST</a></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container py-4 py-xl-5">
+        <div class="row gy-4 gy-md-0">
+            <div class="col-md-6 text-center text-md-start d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-xl-center" data-aos="fade-right" data-aos-duration="550">
+                <div style="max-width: 350px;margin-left: -179px;">
+                    <h2 class="text-uppercase fw-bold" style="padding-bottom: 0px;margin-bottom: -43px;color: #ffff;font-size: 45px;text-align: left;padding-right: 0px;margin-right: -307px;">organize as suas tarefas, planeje e crie metas com um sistema de qualidade<br><br></h2>
+                    <p class="my-3" style="color: #ffff;font-size: 18px;padding-right: 0px;margin-right: -283px;text-align: justify;padding-left: 0px;margin-left: 2px;padding-bottom: 0px;padding-top: 0px;margin-top: 12px;margin-bottom: 12px;">Tem dificuldades para planejar o seu dia? Não sabe quais tarefas que você deve priorizar? Utilize o nosso sistema de check-list e planeje o seu dia com qualidade e segurança.</p>
+                </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-left" data-aos-duration="550">
+                <div class="p-xl-5 m-xl-5" style="margin-top: 51px;"><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;margin-top: -18px;padding-top: 0px;margin-left: 122px;--bs-body-font-size: 1rem;padding-left: 0px;margin-right: -103px;padding-right: 33px;" src="{% static 'assets/img/clip-woman-writing-new-year-resolution.png' %}" width="354" height="300"></div>
+            </div>
+        </div>
+    </div>
+    <section data-aos="fade-down" data-aos-duration="650" data-aos-once="true" class="py-4 py-xl-5" style="background: var(--bs-border-color-translucent);padding-bottom: 15px;margin-bottom: 0px;">
+        <div class="container py-4 py-xl-5">
+            <div class="row mb-5">
+                <div class="col-md-8 col-xl-6 text-center mx-auto">
+                    <h2 style="color: #ffff;">SOBRE O PROJETO</h2>
+                    <hr style="color: #ffff;background: #ffff;--bs-primary: #ffff;--bs-primary-rgb: 255,255,255;">
+                    <p class="w-lg-50" style="color: #fff;text-align: center;margin-right: -48px;margin-left: -64px;">Desenvolvemos esse projeto a fim de auxiliar as pessoas em seus planejamentos diários. Através de uma plataforma de checklist 100% gratuita e intuitiva, você poderá organizar as suas tarefas com qualidade e segurança.</p>
+                </div>
+            </div>
+            <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3" style="padding-bottom: 0px;margin-bottom: 30px;">
+                <div class="col">
+                    <div class="text-center d-flex flex-column align-items-center align-items-xl-center">
+                        <div class="bs-icon-lg bs-icon-rounded bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block mb-3 bs-icon lg"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-calendar-check">
+                                <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"></path>
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"></path>
+                            </svg></div>
+                        <div class="px-3">
+                            <h4 style="color: #ffff;">Por que planejar?</h4>
+                            <p style="text-align: justify;"><span style="color: rgb(255, 255, 255);">O planejamento é de extrema importância para uma melhor administração da sua vida (seja pessoal ou profissional). Traçar metas e objetivos reduz o seu tempo em coisas desnecessárias, garantindo uma melhor produtividade.</span><br><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-center d-flex flex-column align-items-center align-items-xl-center">
+                        <div class="bs-icon-lg bs-icon-rounded bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block mb-3 bs-icon lg"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-card-checklist">
+                                <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"></path>
+                                <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"></path>
+                            </svg></div>
+                        <div class="px-3">
+                            <h4 style="color: #ffff;">O que é um checklist?</h4>
+                            <p style="text-align: justify;"><span style="color: rgb(255, 255, 255);">Sendo uma das ferramentas mais utilizadas no planejamento, o checklist significa </span><strong><span style="color: rgb(255, 255, 255);">lista de verificação. </span></strong><span style="color: rgb(255, 255, 255);">É um método de controle que consiste em listar várias tarefas, atividades e comportamentos, melhorando a sua produtividade.</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-center d-flex flex-column align-items-center align-items-xl-center">
+                        <div class="bs-icon-lg bs-icon-rounded bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block mb-3 bs-icon lg"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-laptop">
+                                <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"></path>
+                            </svg></div>
+                        <div class="px-3">
+                            <h4 style="color: #ffff;">Sobre o sistema</h4>
+                            <p style="text-align: justify;"><span style="color: rgb(255, 255, 255);">Com esse site, queremos facilitar a sua maneira de planejar o seu dia. Através de um sistema de checklist totalmente gratuito, você poderá adicionar e remover as suas tarefas de forma simples e rápida, garantindo um melhor controle do seu dia.</span><br></p>
+                        </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/bs-init.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</body>
+
+</html>
