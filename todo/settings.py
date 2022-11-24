@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-o32pkc(7-m)p_q&3d7-6co^&xj9*5frsq&6$@$=5+!x!--2ijt
 DEBUG = True
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
-
+CSRF_TRUSTED_ORIGINS = ['https://pi3-checklist-production.up.railway.app']
 
 # Application definition
 
