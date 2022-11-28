@@ -1,6 +1,23 @@
-<p>Are you sure you want to delete"{{item}}</p>
+{% load static %}
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href= "{% static 'templates/static/assets/css/update_task.css' %}">
+  <link rel="stylesheet" href= "{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+</head>
+<body style="background: #48688c; padding-top: 15%;">
+  <div class="container align-items-center justify-content-center">
+    <div class="align-items-center row d-flex justify-content-center">
+        <div class="col-md-6 col-xl-400">
+            <div class="card mb-5">
+                <div class="card-body d-flex flex-column align-items-center" style="background: #d7f2e0;;box-shadow: 0.2em 0.2em 1em 0.04em black;">
+<p style="font-size: 1.5rem; jutify-contente: center;">Tem certeza de que deseja excluir?  {{item}}</p>
 
-<a href="{% url 'list' %}">cancel</a>
+<a href="{% url 'list' %}">cancelar</a>
 
 <form method="POST" action="">
     {% csrf_token %}

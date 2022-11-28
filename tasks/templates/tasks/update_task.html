@@ -1,20 +1,41 @@
-<h3>Update Task</h3>
-
-<form method="POST" action=""> 
-    {% csrf_token %}
-kkkk
-    {{form}} 
-    <input type="submit" name="Update Task">
-
-
-</form>
-<div vw class="enabled">
-       <div vw-access-button class="active"></div>
-       <div vw-plugin-wrapper>
-         <div class="vw-plugin-top-wrapper"></div> 
-       </div>
-     </div>
-     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-     <script>
-       new window.VLibras.Widget('https://vlibras.gov.br/app');
-     </script>
+{% load static %}
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href= "{% static 'templates/static/assets/css/update_task.css' %}">
+  <link rel="stylesheet" href= "{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+</head>
+<body style="background: #48688c; padding-top: 15%;">
+  <div class="container align-items-center justify-content-center">
+    <div class="align-items-center row d-flex justify-content-center">
+        <div class="col-md-6 col-xl-400">
+            <div class="card mb-5">
+                <div class="card-body d-flex flex-column align-items-center" style="background:#648cbb;box-shadow: 0.2em 0.2em 1em 0.04em black;"> 
+                  <h1>Tarefa em Atualização</h1>
+                  <form method="POST" action=""> 
+                    {% csrf_token %}
+                
+                    {{form|crispy}} 
+                    <input type="submit" name="Update Task">
+               </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div> 
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+</html>

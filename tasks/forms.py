@@ -8,4 +8,8 @@ class Taskform(forms.ModelForm):
 
     class Meta:
         model = Task
-        fields = '__all__'
+        fields = ['title', 'complete',]
+    def __init__(self,*args,**kwargs) -> None:
+        super().__init__(*args,**kwargs)
+        self.fields['title'].label='title'
+

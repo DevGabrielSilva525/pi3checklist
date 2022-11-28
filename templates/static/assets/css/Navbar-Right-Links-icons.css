@@ -47,11 +47,12 @@
   background: rgba(255, 255, 255, .5);
 }
 
-.bs-icon.bs-icon-rounded {
+.bs-icon.bs-icon-rounded {border-radius: .5rem
   border-radius: .5rem;
 }
 
 .bs-icon.bs-icon-circle {
   border-radius: 50%;
 }
+
 
